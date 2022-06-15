@@ -77,20 +77,10 @@ const nuevoLengthPush = (contactos.push({
   correo: window.prompt("Ingrese el correo electrónico"), // Me gustaría saber si hay una manera de quitar ese "correo:" y que solo quede el "window.prompt."
 }));
 
-console.log(contactos);
   // Crea una función para eliminar un contacto existente
 
-contactos.splice(3, 1);
+const eliminado = contactos.filter((contacto) => contacto.id !== 2);
 
-const eliminado = contactos.splice(2, 1); //Me está eliminando dos en lugar de uno o...
-console.log("Eliminado: ", eliminado);
+console.log(eliminado);
 
-console.log(contactos); // No me muestra el elemento siguiente al eliminado
-
-const mercury = contactos.filter(function (elem) {
-  return elem.id === 4;
-});
-
-console.log(mercury);
-
-// No sé por qué no funciona con el id 4.
+console.log(contactos);
