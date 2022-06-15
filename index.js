@@ -67,7 +67,7 @@ const contactos = [
 
 window.alert("Añadir un nuevo contacto");
 
-const nuevoLengthPush = (contactos.push = {
+const nuevoLengthPush = (contactos.push({
   id: 11,
 
   nombreCompleto: window.prompt("Ingrese el nombre completo"),
@@ -75,7 +75,7 @@ const nuevoLengthPush = (contactos.push = {
   celular: window.prompt("Ingrese el número celular"),
 
   correo: window.prompt("Ingrese el correo electrónico"), // Me gustaría saber si hay una manera de quitar ese "correo:" y que solo quede el "window.prompt."
-});
+}));
 
 console.log(contactos);
   // Crea una función para eliminar un contacto existente
